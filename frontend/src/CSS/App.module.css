@@ -1,0 +1,23 @@
+.all {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Предотвращает прокрутку */
+    zoom: 1;
+    touch-action: none;
+}
+body {
+    overflow: hidden; /* Отключает прокрутку */
+    touch-action: none; /* Отключает масштабирование на мобильных устройствах */
+  }  
+/* App.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Предотвращает прокрутку */
+  zoom: 1;
+}
