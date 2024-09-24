@@ -26,25 +26,15 @@ def get_image_answer(image_path, file_name, task):
     # Construct the prompt
     prompt = f"""
 You are given an image and a task.
-
 The image is provided as input.
-
 The task is: {task}
-
 Please analyze the image to find the button or interface element that can help accomplish the task.
-
 Provide a JSON response with two fields: 'about' and 'action'.
-
 In 'about', write a few words about the appearance of the button and its position.
-
 In 'action', give instructions on what I should do with this button to accomplish the task.
-
 Output only the JSON response.
-
 Ensure the JSON is valid and properly formatted.
-
 Example:
-
 {{
     "about": "The button is a blue rectangle located at the top right corner.",
     "action": "Click on the blue 'Open Browser' button to launch the web browser."
@@ -91,4 +81,4 @@ def process_image():
     return jsonify({'status': 'error', 'message': 'Invalid request or missing photo/task'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
