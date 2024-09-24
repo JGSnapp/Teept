@@ -28,7 +28,7 @@ function App() {
       const base64Photo = reader.result.split(',')[1];
 
       try {
-        const res = await axios.post('https://d-art.site/gemini/process_image', {
+        const res = await axios.post('https://jgsnapp.pythonanywhere.com/', {
           photo: base64Photo,
           task: task,
         });
