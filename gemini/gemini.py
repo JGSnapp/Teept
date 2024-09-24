@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # Allow CORS for all domains
 
 # Configure the API key for Google Generative AI
-genai.configure(api_key=os.environ.get('AIzaSyDipOKGuljWqghEizRH3Q4WGfWxnClZ3BE'))
+genai.configure(api_key='AIzaSyDipOKGuljWqghEizRH3Q4WGfWxnClZ3BE')
 
 UPLOAD_IMAGE_FOLDER = 'uploaded_images'
 os.makedirs(UPLOAD_IMAGE_FOLDER, exist_ok=True)
